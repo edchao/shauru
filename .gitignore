@@ -2,7 +2,7 @@ _site/
 .sass-cache/
 .DS_Store
 
-
+# Node modules duh
 node_modules
 
 # Logs

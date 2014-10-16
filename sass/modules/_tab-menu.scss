@@ -1,0 +1,28 @@
+/* TAB-MENU
+================================================== */
+
+.tab-menu {
+	@include clearfix();
+	border-top: 1px solid $light-gray;
+	margin-bottom: 60px;
+}
+
+
+.tab-menu_item {
+	display: inline-block;
+	float:left;
+	margin-top: -1px;
+	width: 50%;
+	padding: 20px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: $gray;
+}
+
+
+.is-selected {
+	border-top: 1px solid #515152;
+	color: #515152;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "shauru",
+  "version": "1.0.0",
+  "description": "project site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edchao/shauru.git"
+  },
+  "keywords": [
+    "marketing"
+  ],
+  "author": "edchao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edchao/shauru/issues"
+  },
+  "homepage": "https://github.com/edchao/shauru",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.1"
+  }
+}

@@ -1,0 +1,105 @@
+/* Grid Settings
+  ========================================================================== */ 
+  $column-count : 24;
+  $gutter: $pad * 2;
+
+
+
+/* Grid Generator
+  ========================================================================== */ 
+
+  @function generateCols ($n){
+    @return ($n * 100% / $column-count);
+  }
+
+
+  @mixin col($n){
+
+    width : generateCols($n);
+    float : left;
+    display : inline;
+
+  }
+
+
+/* Breakpoints
+  ========================================================================== */ 
+  $widescreen : 800px;
+  $desktop : 800px;
+  $laptop : 800px;
+  $tablet : 500px;
+  $mobile : 300px;
+
+@mixin respond-to($type){
+  @if $type == mobile{
+    @media only screen and (min-width: $mobile + 1) and (max-width: $tablet) { @content; }
+  }
+  @elseif $type == tablet{
+    @media only screen and (min-width: $tablet + 1) and (max-width: $laptop) { @content; }
+  }
+  @elseif $type == laptop {
+    @media only screen and (min-width: $laptop + 1) and (max-width: $desktop) { @content; }
+  }
+  @elseif $type == desktop {
+    @media only screen and (min-width: $desktop + 1) and (max-width: $widescreen) { @content }
+  }
+  @elseif $type == widescreen {
+    @media only screen and (min-width: $widescreen + 1) { @content }
+  }
+}
+
+.container {
+  @include respond-to(mobile){
+    width: $mobile;
+  }
+  @include respond-to(tablet){
+    width: $tablet;
+  }
+  @include respond-to(laptop){
+    width: $laptop;
+  }
+  @include respond-to(desktop){
+    width: $desktop;
+  }
+  @include respond-to(widescreen){
+    width: $widescreen;
+  }
+  margin: 0 auto;
+}
+
+
+/* Gutter class
+  ========================================================================== */ 
+
+  .gutter-wrapper {
+    margin: $gutter;
+  }
+
+
+/* #Clearing - by Dave Gamache
+  ========================================================================== */
+
+  .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility:hidden;}
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+  .clearfix:after {
+    clear: both; }
+  .clearfix {
+    zoom: 1; }
+
+  /* You can also use a <br class="clear" /> to clear columns */
+  .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }

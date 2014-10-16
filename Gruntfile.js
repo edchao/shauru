@@ -4,22 +4,28 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     
-    compass: {
+    sass: {
       dist: {
-        options: {
-          sassDir: 'sass',
-          cssDir: 'css',
+        files: {
+          'css/main.css': 'sass/main.scss',
         }
       }
+    },
+
+    shell : {
+        jekyllBuild : {
+            command : 'jekyll serve'
+        },
     }
 
 
   });
 
   // Load the plugins
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task(s).
-  grunt.registerTask('default', ['compass']);
+  grunt.registerTask('default', ['sass', 'shell']);
 
 };

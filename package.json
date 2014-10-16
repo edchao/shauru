@@ -21,6 +21,8 @@
   "homepage": "https://github.com/edchao/shauru",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-compass": "^1.0.1"
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-shell": "^1.1.1"
   }
 }

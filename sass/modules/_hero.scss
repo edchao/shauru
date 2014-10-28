@@ -6,7 +6,11 @@
 	padding: 150px 0;
 }
 
-.hero_title {
+.hero-article {
+	padding: 120px 0;
+}
+
+.hero_logo {
 	width:174px;
 	height:48px;
 	margin:0 auto;
@@ -17,10 +21,28 @@
 	text-indent: -99999px;
 }
 
+
+
 .hero_byline {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 1px;
+	color: $gray;
+}
+
+.hero_title {
+	max-width:600px;
+	font-weight: 300;
+	height:48px;
+	margin:0 auto 20px auto;
+	font-size: 38px;
+	text-align: center;
+}
+
+.hero_slug {
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
 	color: $gray;
 }

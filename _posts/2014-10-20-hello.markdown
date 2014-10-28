@@ -1,0 +1,21 @@
+---
+layout: article
+title:  "Hello World"
+slug: "when things go right"
+date:   2014-10-20 19:20:09
+tags: 
+- marketing
+- metrics 
+categories:
+- published
+
+
+---
+
+
+#### The Rules
+
+The rules of the game are as follows.  You command a squad of 6 characters.  Each character has various abilities from simple walking to ultimate attacks.  Each of these abilities requires different amounts of energy, which regenerates continuously per character over a short span of time.  The goal of the game is to rack up a target number of kills before the opponent does.
+
+#### Soul Collection
+

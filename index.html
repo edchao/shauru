@@ -10,44 +10,28 @@ title: Shau-Ru
 
 <div class="container">
 	<div class="hero">
-		<div class="hero_title"> Shau-Ru </div>
+		<div class="hero_logo"> Shau-Ru </div>
 		<div class="hero_byline">Marketer</div>
 	</div>
 	<main>
 		<div class="tab-menu">
-			<a href="#"><div class="tab-menu_item is-selected">Projects</div></a>
-			<a href="#"><div class="tab-menu_item">About</div></a>
+			<a href="/index.html"><div class="tab-menu_item is-selected">Projects</div></a>
+			<a href="/about.html"><div class="tab-menu_item">About</div></a>
 		</div>
 
 		<div class="content">
-			<div class="card">
-				<div class="card_image"></div>
-				<div class="card_info">
-					<div class="card_title">Getting it going on the get go</div>
-					<div class="card_slug">When things go wrong or right, it's cool.</div>
-					<div class="card_tags">Marketing, Metrics</div>
+			{% for post in site.posts %}
+			<a href="{{ post.url }}">
+				<div class="card">
+					<div class="card_image"></div>
+					<div class="card_info">
+						<div class="card_title">{{ post.title }}</div>
+						<div class="card_slug">{{ post.slug }}</div>
+						<div class="card_tags">{% for tag in post.tags %}{{tag}} {% endfor %}</div>
+					</div>
 				</div>
-			</div>
-
-			<div class="card">
-				<div class="card_image"></div>
-				<div class="card_info">
-					<div class="card_title">Ebooks for everyone!</div>
-					<div class="card_slug">When things go wrong or right, it's cool.</div>
-					<div class="card_tags">Marketing</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="card_image"></div>
-				<div class="card_info">
-					<div class="card_title">Getting it going on the get go</div>
-					<div class="card_slug">When things go wrong or right, it's cool.</div>
-					<div class="card_tags">Marketing, Metrics</div>
-				</div>
-			</div>
-
-
+			</a>
+			{% endfor %}
 		</div>
 	</main>
 </div>

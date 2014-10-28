@@ -117,7 +117,7 @@ pre {
 ================================================== */
 a {
   color: #888;
-  text-decoration: underline;
+  text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
@@ -192,7 +192,10 @@ a:hover, a:focus {
 .hero {
   padding: 150px 0; }
 
-.hero_title {
+.hero-article {
+  padding: 120px 0; }
+
+.hero_logo {
   width: 174px;
   height: 48px;
   margin: 0 auto;
@@ -207,6 +210,20 @@ a:hover, a:focus {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #A7A7A7; }
+
+.hero_title {
+  max-width: 600px;
+  font-weight: 300;
+  height: 48px;
+  margin: 0 auto 20px auto;
+  font-size: 38px;
+  text-align: center; }
+
+.hero_slug {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
   color: #A7A7A7; }
 
 /* TAB-MENU
@@ -229,10 +246,11 @@ a:hover, a:focus {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #A7A7A7; }
+  color: #A7A7A7;
+  border-top: 1px solid rgba(3, 3, 3, 0); }
 
 .is-selected {
-  border-top: 1px solid #515152;
+  border-top: 1px solid #030303;
   color: #515152; }
 
 /* CARD
@@ -260,6 +278,7 @@ a:hover, a:focus {
   padding: 20px 0; }
 
 .card_title {
+  color: #111;
   font-size: 24px;
   font-weight: 200; }
 
@@ -274,5 +293,8 @@ a:hover, a:focus {
   color: #91AFB2;
   text-transform: uppercase;
   font-weight: 700; }
+
+/* LAYOUTS
+================================================== */
 
 /*# sourceMappingURL=main.css.map */

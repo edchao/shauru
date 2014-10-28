@@ -19,10 +19,11 @@
 	font-weight: 700;
 	letter-spacing: 1px;
 	color: $gray;
+	border-top: 1px solid rgba(3,3,3,0);
 }
 
 
 .is-selected {
-	border-top: 1px solid #515152;
+	border-top: 1px solid rgba(3,3,3,1);
 	color: #515152;
 }
